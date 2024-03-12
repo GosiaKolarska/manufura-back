@@ -8,6 +8,7 @@ import "slick-carousel/slick/slick-theme.css";
 import styles from "./HomeTestimonial.module.css";
 
 import star from "../../../public/star.png";
+import Link from "next/link";
 
 const HomeTestimonial = () => {
   const sliderSettings = {
@@ -47,9 +48,13 @@ const HomeTestimonial = () => {
               </span>
             </div>
           </div>
-          <a href="/" className="btn-radius" aria-label="Poznaj nasze usługi">
+          <Link
+            href="/"
+            className="btn-radius"
+            aria-label="Poznaj nasze usługi"
+          >
             Poznaj nasze usługi
-          </a>
+          </Link>
         </div>
       </div>
       <Slider

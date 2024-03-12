@@ -5,6 +5,7 @@ import client from "@/utils/sanityClient";
 
 import phone from "../../../public/phone-outgoing-white-red.png";
 import styles from "./SingleHero.module.css";
+import Link from "next/link";
 
 const SingleHero = ({ data }) => {
   if (!data) return null;
@@ -25,7 +26,7 @@ const SingleHero = ({ data }) => {
           </div>
         )}
         <div className={styles.heroSingleServiceBreadcrumbs}>
-          <a href="/uslugi">Usługi</a>
+          <Link href="/#">Usługi</Link>
           <span className={styles.heroSingleServiceBreadcrumbsDivider}>/</span>
           <span className="red">{data.breadcrumbs}</span>
         </div>
@@ -35,9 +36,9 @@ const SingleHero = ({ data }) => {
         </h1>
         <p className={styles.heroSingleServiceParahraph}>{data.description}</p>
         <div className={styles.heroSingleServiceCTA}>
-          <a href="#" className="btn-fullBg">
+          <Link href="#" className="btn-fullBg">
             Zobacz ceny uslug
-          </a>
+          </Link>
           <div className={styles.heroSingleServiceCTAPhoneWrapper}>
             <div className={styles.heroSingleServiceCTAPhoneInnerWrapper}>
               <h3 className={styles.heroSingleServiceCTATitle}>

@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import client from "@/utils/sanityClient";
 import imageUrlBuilder from "@sanity/image-url";
 
@@ -47,10 +47,12 @@ const SingleGallery = ({ data }) => {
                 className={styles.singleServiceRealizationsListItem}
                 key={item._key}
               >
-                <img
+                <Image
                   src={urlFor(item.image.asset)}
                   layout="fill"
                   alt="gallery photo"
+                  width="395"
+                  height="517"
                 />
               </div>
             ))}
