@@ -16,15 +16,17 @@ import styles from "./HomeSlider.module.css";
 import phone from "../../../public/phone-outgoing-white-red.png";
 
 import { urlFor } from "@/utils/sanityImageUtils";
+import Link from "next/link";
 
 const HomeSlider = ({ data }) => {
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const sliderRef = useRef();
+
   if (!data || !data[0] || !data[0].slides) {
     return null;
   }
 
   const slides = data[0].slides;
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const sliderRef = useRef();
 
   const handleBreadcrumbClick = (index) => {
     if (sliderRef.current) {
@@ -79,9 +81,9 @@ const HomeSlider = ({ data }) => {
                   </h2>
                   <p className={styles.heroParagraph}>{slide.text}</p>
                   <div className={styles.buttonWrapper}>
-                    <a href="/uslugi" className="btn-radius">
+                    <Link href="/#" className="btn-radius">
                       Poznaj nasze usługi
-                    </a>
+                    </Link>
                     <div className={styles.heroCTA}>
                       <h3 className={styles.heroCTATitle}>
                         <span className="red">Zadzwoń</span> do nas
