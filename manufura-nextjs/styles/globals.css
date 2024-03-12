@@ -1,0 +1,452 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+
+  --primary-glow: conic-gradient(
+    from 180deg at 50% 50%,
+    #16abff33 0deg,
+    #0885ff33 55deg,
+    #54d6ff33 120deg,
+    #0071ff33 160deg,
+    transparent 360deg
+  );
+  --secondary-glow: radial-gradient(
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+
+  --tile-start-rgb: 239, 245, 249;
+  --tile-end-rgb: 228, 232, 233;
+  --tile-border: conic-gradient(
+    #00000080,
+    #00000040,
+    #00000030,
+    #00000020,
+    #00000010,
+    #00000010,
+    #00000080
+  );
+
+  --callout-rgb: 238, 240, 241;
+  --callout-border-rgb: 172, 175, 176;
+  --card-rgb: 180, 185, 188;
+  --card-border-rgb: 131, 134, 135;
+}
+
+/* CSS Variables for common values */
+:root {
+  --font-family-sora: "Sora", sans-serif;
+  --font-family-rosario: "Rosario", sans-serif;
+  --font-family-red-rose: "Red-Rose", sans-serif;
+  --color-dark-gray: #3E3E3E;
+  --color-red: #FF3232;
+  --color-light-gray: #DFDBD6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --secondary-glow: linear-gradient(
+      to bottom right,
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0.3)
+    );
+
+    --tile-start-rgb: 2, 13, 46;
+    --tile-end-rgb: 2, 5, 19;
+    --tile-border: conic-gradient(
+      #ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80
+    );
+
+    --callout-rgb: 20, 20, 20;
+    --callout-border-rgb: 108, 108, 108;
+    --card-rgb: 100, 100, 100;
+    --card-border-rgb: 200, 200, 200;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #fff;
+  background: #161616;
+  font-size: 16px;
+  font-family: 'GillSans', sans-serif;
+}
+
+#__next {
+  min-height: 100%;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+  max-width: 1270px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin-bottom: 0.9rem;
+}
+
+h1 {
+  font-size: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+h2 {
+  font-size: 1.25em;
+  margin-bottom: 0.83em;;
+}
+
+h3 {
+  margin-bottom: 0.75em;
+}
+
+ul {
+  padding-left: 0;
+  list-style: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+.red {
+  color: #FF3232;
+}
+
+.block {
+  display: block;
+}
+
+.white {
+  color: #fff;
+}
+
+.btn-fullBg {
+  background-color: #fff;
+  color: #000;
+  padding: 29px 45px;
+  font-family: "Red-Rose", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: .3s;
+}
+
+.btn-fullBg:hover {
+  background: #9f2e2e;
+  color: #fff;
+  
+}
+
+.slider-related .slick-list{
+  padding-left: 75px;
+}
+
+.slider-related .slick-dots {
+  position: static;
+  text-align: left;
+  padding: 70px 0 0 230px;
+  display: flex!important;
+  gap: 10px;
+}
+
+.slider-related .slick-dots li {
+  width: auto;
+  height: 10px;
+  margin: 0;
+}
+
+.slider-related .slick-dots li button {
+  width: 18px;
+  height: 18px;
+  padding: 4px;
+}
+
+.slider-related .slick-dots li button:before {
+  opacity: .1;
+  content: '';
+  width: 10px;
+  height: 10px;
+  top: 4px;
+  left: 4px;
+  background-color: #C4C4C4;
+}
+
+ .slider-related .slick-dots li.slick-active button:before {
+  background-color: #FF3232;
+  opacity: 1;
+}
+
+.btn-radius {
+  background-color: #fff;
+  color: #000;
+  font-family: "Red Rose";
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 17px;
+  padding: 29px 41px;
+  border-top-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  display: inline-block;
+}
+
+.btn-radius.arrow {
+  padding: 21px 28px;
+}
+.btn-radius.arrow:after {
+  content: '';
+  display: inline-block;
+  background-image: url(../public/right-arrow-red-black.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 21px;
+  height: 16px;
+  margin-left: 16px;
+  vertical-align: text-top;
+}
+
+.dot {
+  background: #fff;
+  width: 4px;
+  height: 4px;
+  margin: 0 22px;
+  display: inline-block;
+  border-radius: 100%;
+}
+
+.slider-homeServices .slick-list {
+  padding-left: 265px!important;
+}
+
+.slick-slider .slick-dots {
+  top: 270px;
+  text-align: end;
+  right: 365px;
+  bottom: unset;
+}
+
+.slick-slider .slick-dots li{
+  width: auto;
+  height: auto;
+  margin: 0 6px;
+}
+
+.slick-slider .slick-dots li button{
+  padding: 4px;
+}
+
+
+.slick-slider .slick-dots li button:before {
+  font-size: unset;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #C4C4C4;
+  opacity: 0.1;
+  position: static;
+  display: block;
+}
+
+.slick-slider .slick-dots li.slick-active button:before{
+  background-color: #FF3232;
+  opacity: 1;
+}
+
+.slider-homeServices .slick-arrow.slick-next {
+  right: 70px;
+}
+
+.slider-homeServices .slick-arrow.slick-prev {
+  left: 70px;
+}
+
+.slider-homeServices .slick-prev, 
+.slider-homeServices .slick-next {
+  width: 96px;
+  height: 96px;
+  background-color: #FF3232;
+  display: flex!important;
+  align-items: center;
+  justify-content: center;
+  top: unset;
+  bottom: 47px;
+  z-index: 9;
+}
+
+.slider-homeServices .slick-next {
+  border-top-right-radius: 25px;
+}
+
+.slider-homeServices .slick-prev {
+  border-top-left-radius: 25px;
+}
+
+.slider-homeServices .slick-prev:hover, 
+.slider-homeServices .slick-next:hover {
+  opacity: 0.6;
+  background-color: #FF3232;
+}
+
+.slider-homeServices .slick-prev:active, 
+.slider-homeServices .slick-next:active {
+  background-color: #FF3232;
+}
+
+.slider-homeServices .slick-arrow.slick-prev:before, 
+.slider-homeServices .slick-arrow.slick-next:before {
+  background-image: url(../public//chevron-right.png);
+  content: '';
+  display: block;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  opacity: 1;
+}
+
+.slider-homeServices .slick-arrow.slick-prev:before {
+  transform: rotate(180deg);
+}
+
+.slider-homeServices .slick-prev.slick-disabled, 
+.slider-homeServices .slick-next.slick-disabled {
+  display: none!important;
+}
+
+.slick-slider.homeTestimonialListSlider {
+    max-width: 100%;
+    /* margin: 0 auto; */
+}
+
+.homeTestimonialListSlider .slick-slide {
+  padding-bottom: 5px;
+  opacity: 0.3;
+
+  width: 620px!important;
+  margin-left: 20px;
+}
+
+.homeTestimonialListSlider .slick-list {
+  padding-left: 190px!important;
+}
+
+.homeTestimonialListSlider .slick-slide.slick-active {
+  opacity:1;
+}
+
+.homeTestimonialListSlider .slick-slide.slick-active .home-testimonial-list-item:after {
+  visibility: visible;
+}
+
+.homeTestimonialListSlider.slick-slider .slick-dots {
+  top: unset;
+  bottom: -60px;
+  text-align: center;
+  right: unset;
+}
+
+
+
+.homeSliderHero .slick-slider {
+  margin-top: -130px;;
+}
+
+.homeSliderHero .slick-prev, 
+.homeSliderHero .slick-next {
+  border: 1px solid #fff;
+  width: 78px;
+  height: 78px;
+}
+
+.homeSliderHero .slick-prev {
+  border-bottom-left-radius: 15px;
+  display: none!important;
+} 
+
+.homeSliderHero .slick-next{
+  border-bottom-right-radius: 15px;
+  right: 40px;
+  top: 55%;
+  border: 1px solid;
+  border-image-source: linear-gradient(135.77deg, #FFFFFF 0%, #525252 32.84%, #FFFFFF 67.67%, #C4C4C4 95.53%);
+  background: linear-gradient(135.77deg, #FFFFFF 0%, #525252 32.84%, #FFFFFF 67.67%, #C4C4C4 95.53%),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01));  
+} 
+
+.homeSliderHero .slick-next:after {
+  background-image: url(../public/right-arrow-red-white.png);
+  content: '';
+  width: 28px;
+  height: 24px;
+  display: inline-block;
+  z-index: 2;
+} 
+
+.homeSliderHero .slick-next:before {
+ content: '';
+ background-color: #161616;
+ width: 100%;
+ height: 100%;
+ display: inline-block;
+ position: absolute;
+ top: 0;
+ left: 0;
+ border-bottom-right-radius: 15px;
+ z-index: -1;
+ opacity: 0.95;
+}
+
+.homeSliderHero .slick-prev:before {
+  display: none;
+}
+
+.homeSliderHero .slick-next:hover, 
+.homeSliderHero .slick-next:focus {
+  background: linear-gradient(135.77deg, #FFFFFF 0%, #525252 32.84%, #FFFFFF 67.67%, #C4C4C4 95.53%),
+  linear-gradient(0deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.01));  
+  opacity: 0.7;
+}

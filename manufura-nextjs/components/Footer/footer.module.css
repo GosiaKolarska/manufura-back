@@ -1,0 +1,128 @@
+.footer{
+    padding: 19px 0 0;
+}
+
+.footerTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0;
+}
+
+.footerTopLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    max-width: 325px;
+}
+
+.footerTopLeftContent{
+    padding-top: 40px;
+    color: #979797;
+    font-family: "Rosario", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26.6px;
+}
+
+.footerTopRight {
+    display: flex;
+    gap: 50px;
+}
+
+.footerMenuTitle {
+    color: #FFF;
+    font-family: Sora;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 0;
+}
+
+.footerMenuTitleDivider {
+    display: block;
+    height: 1px;
+    width: 30px;
+    background-color: #fff;
+    margin: 10px 0 23px;
+    position: relative;
+}
+
+.footerMenuTitleDivider:after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 12px;
+    background-color: red;
+    position: absolute;
+    right: 0;
+}
+
+.footerMenuItemList:nth-child(2) {
+    column-count: 2;
+}
+
+
+.footerMenuItemListItem{
+    color: #979797;
+    font-family: "Rosario", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30.4px;
+}
+
+.copy {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 0 23px;
+    border-top: 1px solid #282828;
+}
+
+.copyLeft {
+    display: flex;
+    color: #505050;
+    gap: 45px;
+    font-family: Sora;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 12.6px;
+}
+
+.copyRight {
+    display: flex;;
+}
+
+.socialList {
+    display: flex;
+    padding-left: 0;
+    list-style-type: none;
+    gap: 13px;
+}
+
+.socialItem {
+    width: 34px;
+    height: 34px;
+    /* background: #FFF; */
+    border: 1px solid;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .3s;
+}
+
+.socialItem:hover {
+    opacity: 0.1;
+
+}
+
+.socialItemLink{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

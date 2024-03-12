@@ -1,0 +1,137 @@
+.heroSlider {
+    padding: 8.75rem 0 5rem;
+    position: relative;
+}
+
+.heroBreadcrumbs {
+    padding-bottom: 2rem;
+    margin-left: -1.375rem;
+    z-index: 9;
+    position: relative;
+}
+
+.heroBreadcrumbsList {
+    display: flex;
+    gap: 1.4375rem;
+}
+
+.heroBreadcrumbsListItem {
+    color: #4E4E4E;
+    font-family: "Rosario", sans-serif;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6875rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 0 0.25rem;
+}
+
+.heroBreadcrumbsListItemActive {
+    color: #FF3232;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+}
+
+.heroBreadcrumbsListItemActive:before,
+.heroBreadcrumbsListItemActive:after  {
+    content: '';
+    height: 0.0625rem;
+    display: inline-block;
+    margin-right: 1.3125rem;
+}
+.heroBreadcrumbsListItemActive:before {
+    width: 1.0625rem;
+    background-color: #fff;
+}
+
+.heroBreadcrumbsListItemActive:after {
+    width: 0.75rem;
+    background-color: #FF3232;
+    left: 1.3125rem;
+    position: absolute;
+}
+
+.heroTitle {
+    color: #FFF;
+    font-family: Sora;
+    font-size: 4.625rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 5.55rem;
+    max-width: 66.75rem;
+    margin-bottom: 1.875rem;
+}
+
+.heroParagraph {
+    color: #DFDBD6;
+    font-family: "Rosario", sans-serif;
+    font-size: 1.375rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 2.475rem;
+    max-width: 36.75rem;
+    padding-bottom: 2.75rem;
+}
+
+.heroContent {
+    padding: 0 1.25rem;
+}
+
+.buttonWrapper {
+    display: flex;
+    align-items: center;
+    gap: 3.25rem;
+}
+
+.heroCTA {
+    display: flex;
+    align-items: baseline;
+    gap: 0.625rem;
+}
+
+.heroCTATitle {
+    color: #FFF;
+    font-family: "Red-Rose", sans-serif;
+    font-size: 0.9766rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    display: block;
+    margin: 0;
+}
+
+.heroCTATitle:after {
+    content: '';
+    height: 0.125rem;
+    width: 3rem;
+    background-color: #fff;
+    display: block;
+    margin-top: 0.75rem;
+}
+
+.heroSliderItem {
+    position: relative;
+    padding: 8.125rem 0;
+}
+
+.heroSliderImage {
+    position: absolute;
+    z-index: -1;
+    left: 32%;
+    top: 0;
+}
+
+.heroSliderImage:after {
+    content: '';
+    height: 12.8125rem;
+    width: 0.1875rem;
+    background-color: #FF3232;
+    position: absolute;
+    right: 0;
+    top: 3.875rem;
+    display: inline-block;
+}

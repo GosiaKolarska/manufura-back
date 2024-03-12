@@ -1,0 +1,85 @@
+.HomeServices {
+    padding: 0 0 12.5rem; 
+}
+
+.HomeServicesSliderItem {
+    padding-top: 9.125rem;
+}
+
+.HomeServicesSliderItem .HomeServicesSliderItemImage{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.HomeServicesSliderItemContent {
+    padding-top: 6rem;
+    margin-left: 0.75rem; 
+    display: inline-block;
+}
+
+.HomeServicesSliderItemNumber{
+    font-family: Sora;
+    font-size: 3.9375rem;
+    font-weight: 200;
+    line-height: 5.5rem;
+    color: #FF3232;
+    padding-bottom: 0.4375rem;
+    display: block;
+}
+
+.HomeServicesSliderItemTitle{
+    font-family: "Sora";
+    font-size: 3.375rem;
+    font-weight: 700;
+    line-height: 4.75rem;
+    max-width: 50.125rem;
+    padding-left: 2.1875rem;
+    margin-bottom: 1.5625rem;
+    position: relative;
+}
+
+.HomeServicesSliderItemTitle:before{
+    content: '';
+    width: 0.25rem;
+    height: calc(100% - 1.6875rem);
+    background: #FF3232;
+    display: block;
+    position: absolute;
+    top: 1rem;
+    left: 0;
+}
+
+.HomeServicesSliderItemParagraph {
+    font-family: "Rosario";
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.9375rem;
+    color: #DFDBD6;
+    max-width: 48.125rem;
+}
+
+.HomeServicesSliderItemCTAWrapper {
+    padding-top: 4.0625rem;
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.75rem;
+}
+.HomeServicesSliderItemCTA:first-child::after {
+    content: '';
+    width: 3rem;
+    height: 0.125rem;
+    display: block;
+    background-color: #fff;
+    margin-top: 0.75rem;
+    position: absolute;
+    bottom: -0.75rem;
+}
+
+.HomeServicesSliderItemCTA {
+    display: inline-block;
+    font-family: "Red Rose";
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.0625rem;
+    position: relative;
+}

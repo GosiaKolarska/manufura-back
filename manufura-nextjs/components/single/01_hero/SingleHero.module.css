@@ -1,0 +1,98 @@
+.heroSingleService {
+    padding-top: 8.5rem;
+    padding-bottom: 10rem;
+}
+
+.heroSingleServiceImage {
+    position: absolute;
+    right: 10%;
+    z-index: -1;
+}
+
+.heroSingleServiceTitle {
+    font-size: 4.625rem;
+    font-weight: 700;
+    line-height: 5.5625rem;
+    text-align: left;
+    margin-bottom: 1.875rem;
+    max-width: 1000px;
+}
+
+.heroSingleServiceParahraph {
+    font-size: 1.375rem;
+    font-weight: 300;
+    line-height: 2.25rem;
+    text-align: left;
+    max-width: 580px;
+}
+
+.heroSingleServiceBreadcrumbs {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    color: var(--color-dark-gray);
+    padding-bottom: 2rem;
+    font-family: "Rosario";
+}
+
+.heroSingleServiceBreadcrumbsDivider {
+    color: #fff;
+    padding: 0 0.625rem;
+}
+
+.heroSingleServiceCTA {
+    display: flex;
+    align-items: center;
+    gap: 4.375rem;
+    padding-top: 3.125rem;
+}
+
+.heroSingleServiceCTATitle {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+    padding-right: 0.4375rem;
+    text-align: left;
+    font-family: "Red Rose";
+}
+
+.heroSingleServiceCTAPhoneWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5625rem;
+}
+
+.heroSingleServiceCTAPhoneInnerWrapper {
+    display: flex;
+    align-items: center;
+}
+
+.heroSingleServiceCTAPhone {
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.9375rem;
+    text-align: right;
+}
+
+.singleServiceTitle {
+    font-size: 3.375rem;
+    font-weight: 700;
+    line-height: 4.75rem;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0 1.25rem 3rem;
+    font-family: "Sora";
+}
+
+.singleServiceSubtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: 0.4em;
+    text-align: center;
+    color: var(--color-red);
+    text-transform: uppercase;
+    display: block;
+    font-family: "Rosario";
+}
+

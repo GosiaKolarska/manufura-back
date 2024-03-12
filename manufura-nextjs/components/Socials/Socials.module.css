@@ -1,0 +1,41 @@
+.socials {
+    position: fixed;
+    right: -1.25rem;
+    top: 28.4375rem;
+    z-index: 99;
+}
+
+.socialsList {
+    transform: rotate(90deg);
+    display: flex;
+}
+
+.socialsListItem:last-child:after {
+    display: none;
+}
+
+.socialsListItemLink {
+    display: inline-block;
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.3s;
+    font-family: "Red Rose";
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 0.9375rem;
+}
+
+.socialsListItemLink:hover {
+    opacity: 1;
+}
+
+.socialsListItem:after {
+    content: '/';
+    color: #FF3232;
+    display: inline-block;
+    padding: 0 0.5em;
+    font-family: "Red Rose";
+    font-size: 0.875rem;
+    font-weight: 300;
+    line-height: 0.9375rem;
+}

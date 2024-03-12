@@ -1,0 +1,93 @@
+.homeTestimonial {
+    padding: 4.375rem 0 10.625rem;
+}
+
+.homeTestimonialContentTextTitle {
+    color: #FFF;
+    font-family: "Sora";
+    font-size: 3.375rem;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 1.5625rem;
+}
+
+.homeTestimonialContentWrapper {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding-bottom: 5.625rem;
+}
+
+.homeTestimonialListItem {
+    max-width: 38.75rem;
+    background-color: #1F1F1F;
+    padding: 2.8125rem 4.8125rem;
+    position: relative;
+}
+
+.homeTestimonialListItem:after {
+    content: '';
+    display: block;
+    width: 22.625rem;
+    height: 0.3125rem;
+    background-color: #FF3232;
+    position: absolute;
+    bottom: -0.3125rem;
+    left: 0;
+    visibility: hidden;
+}
+
+.homeTestimonialListItemTitle {
+    font-family: "Red Rose";
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.625;
+    margin-bottom: 0.75rem;
+}
+
+.homeTestimonialListItemSubtitle {
+    font-family: "Red Rose";
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.25;
+    text-align: left;
+}
+
+.homeTestimonialListItemParagraph {
+    padding-top: 1.375rem;
+    font-family: "Rosario";
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.9375rem;
+    text-align: left;
+    color: #DFDBD6;
+}
+
+.homeTestimonialStars {
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+    padding-left: 0.5rem;
+}
+
+.homeTestimonialStarsNumber {
+    color: #FF3232;
+    font-family: "Red Rose";
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.625;
+}
+
+.homeTestimonialStarsImages {
+    display: flex;
+    gap: 0.6875rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.homeTestimonialStarsEndText {
+    font-family: "Red Rose";
+    font-size: 1.125rem;
+    font-weight: 400;
+    line-height: 1.25;
+}

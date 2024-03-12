@@ -1,0 +1,95 @@
+.singleServiceBenefits {
+    padding-top: 3.125rem;
+    padding-bottom: 13.4375rem;
+}
+
+.singleServiceBenefitsList {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.singleServiceBenefitsListItem {
+    max-width: 320px;
+    color: var(--color-light-gray);
+}
+
+.singleServiceBenefitsListItemImage {
+    display: inline-block;
+    position: relative;
+}
+
+.singleServiceBenefitsListItemImage:before {
+    content: "";
+    position: absolute;
+    background-image: url(../../../public/benefits-dots.png);
+    width: 3.875rem;
+    height: 0.25rem;
+}
+
+.singleServiceBenefitsListItemImage:after {
+    content: '';
+    width: 32px;
+    height: 32px;
+    background: white;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    z-index: -1;
+    border-radius: 100%;
+    box-shadow: 15px 11px 40px 21px rgba(79, 79, 79, 1);
+}
+
+.singleServiceBenefitsListItem:nth-child(1) .singleServiceBenefitsListItemImage:before {
+    left: -2.4375rem;
+    top: 1.5rem;
+}
+
+.singleServiceBenefitsListItem:nth-child(2) .singleServiceBenefitsListItemImage{
+    transform: rotate(180deg);
+}
+
+.singleServiceBenefitsListItem:nth-child(2) .singleServiceBenefitsListItemImage:before {
+    left: -2.75rem;
+    top: 0.875rem;
+}
+
+.singleServiceBenefitsListItem:nth-child(3) .singleServiceBenefitsListItemImage {
+    transform: rotate(270deg);
+}
+
+.singleServiceBenefitsListItem:nth-child(3) .singleServiceBenefitsListItemImage:before {
+    bottom: -0.625rem;
+    right: 0;
+    transform: rotate(90deg);
+}
+
+.singleServiceBenefitsListItemParagraph {
+    color: var(--color-light-gray);
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.9375rem;
+    text-align: left;
+    padding-top: 3.125rem;
+}
+
+.singleServiceTitle {
+    font-size: 3.375rem;
+    font-weight: 700;
+    line-height: 4.75rem;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0 1.25rem 3rem;
+}
+
+.singleServiceSubtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: 0.4em;
+    text-align: center;
+    color: var(--color-red);
+    text-transform: uppercase;
+    display: block;
+}
+

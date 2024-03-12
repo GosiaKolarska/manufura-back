@@ -1,0 +1,36 @@
+.aboutPage {
+    padding: 100px 0;
+}
+
+.aboutHeroTitle {
+    font-family: "Sora";
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 76px;
+}
+
+.aboutHeroContent {
+    max-width: 540px;
+    font-family: "Rosario";
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 31px;
+    padding-bottom: 40px;
+}
+
+.aboutHeroAuthor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.aboutHeroAuthorImageWrapper {
+    max-width: 85px;
+    max-height: 85px;
+
+}
+
+.aboutHeroAuthorImageWrapper img {
+    object-fit: cover;
+    border-radius: 100%;
+}

@@ -1,0 +1,81 @@
+
+.singleServiceFAQ {
+    padding-bottom: 160px;
+}
+
+.singleServiceFAQListItem {
+    border-top: 1px solid #ffffff33;
+}
+
+.singleServiceFAQListItem:last-child {
+    border-bottom: 1px solid #ffffff33;
+}
+
+.singleServiceFAQListItemTitle {
+    padding: 33px 0;
+    font-family: Sora;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.singleServiceFAQListItemQuestion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.singleServiceFAQListItemTitleIconRotated {
+    transition: transform 0.15s ease-in-out;
+    transform: rotate(45deg);
+}
+
+.singleServiceFAQListItemAnswer {
+    font-family: "Sora";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 30px;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    color: #DFDBD6;
+    margin-bottom: 40px;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+.singleServiceFAQListItemAnswerExpanded {
+    max-height: 1000px;
+    opacity: 1;
+}
+
+.singleServiceTitle{
+    font-family: var(--font-family-sora);
+}
+
+.singleServiceSubtitle {
+    font-family: var(--font-family-rosario);
+}
+
+.singleServiceTitle {
+    font-size: 3.375rem;
+    font-weight: 700;
+    line-height: 4.75rem;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0 1.25rem 3rem;
+}
+
+.singleServiceSubtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: 0.4em;
+    text-align: center;
+    color: var(--color-red);
+    text-transform: uppercase;
+    display: block;
+}

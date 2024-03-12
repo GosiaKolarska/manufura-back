@@ -1,0 +1,48 @@
+.ctaSection {
+    padding: 4.9375rem 0 6rem;
+    margin-top: 6.25rem;
+    border-top: 1px solid #282828;
+    position: relative;
+}
+
+.ctaSectionInner {
+    display: flex;
+    gap: 8.75rem;
+}
+
+.ctaSection:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    height: 1px;
+    width: 18.75rem; 
+    background: #FF3232;
+}
+
+.ctaTitle {
+    font-size: 2.625rem; 
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    max-width: 36.25rem;
+    width: 100%;
+    font-family: Sora;
+    color: #fff;
+    margin-bottom: 0;
+}
+
+.ctaRightContent {
+    max-width: 28rem; 
+    width: 100%;
+}
+
+.ctaRightContent p {
+    color: #DFDBD6;
+    font-family: "Rosario", sans-serif;
+    font-size: 1.125rem; 
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.7; 
+    padding-bottom: 1.563rem; 
+}

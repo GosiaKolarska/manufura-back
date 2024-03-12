@@ -1,0 +1,23 @@
+.homeClients {
+    padding: 4.6875rem 0;
+}
+
+.homeClientsList {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 7.5rem;
+}
+
+.homeClientsListItem {
+    transition: .3s;
+    opacity: 0.25;
+}
+
+.homeClientsListItem:hover {
+    opacity: 1;
+}
+
+.homeClientsList img {
+    object-fit: contain;
+}

@@ -1,0 +1,134 @@
+
+.singleServiceRelated {
+    padding-top: 3.3125rem;
+    padding-bottom: 3rem;
+}
+
+.singleServiceRelated .singleServiceSubtitle {
+    text-align: left;
+}
+
+.singleServiceRelated .singleServiceTitle {
+    text-align: left;
+    padding-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 37px;
+}
+
+
+.singleServiceRelatedList {
+    display: flex;
+    gap: 7.5rem;
+}
+
+.singleServiceRelatedItem {
+    position: relative;
+    padding-left: 60px;
+}
+
+.singleServiceRelatedItemWrapper {
+    max-width: 512px;
+    background-color: #1F1F1F;
+    padding: 36px 102px 55px;
+    z-index: -1;
+}
+.singleServiceRelatedItem > span,
+.singleServiceRelatedItemImage {
+    position: absolute!important;
+    top: 50px!important;
+    left: -4px!important;
+}
+
+.singleServiceRelatedItemNumber {
+    font-family: Sora;
+    font-size: 48px;
+    font-weight: 200;
+    line-height: 67px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FF3232;
+}
+
+.singleServiceRelatedItemTitle {
+    font-family: Sora;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    padding-top: 6px;
+    margin-bottom: 14px;
+}
+
+.singleServiceRelatedItemParagraph {
+    font-family: "Rosario", sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 31px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #DFDBD6;
+}
+
+.singleServiceRelatedItemCTA {
+    display: inline-block;
+    margin-top: 26px;
+    cursor: pointer;
+    font-family: "Red Rose", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 17px;
+}
+
+.singleServiceRelatedItemCTA:after {
+    content: '';
+    width: 48px;
+    height: 2px;
+    background-color: #fff;
+    display: block;
+    margin-top: 14px;
+}
+
+.singleServiceRelatedItemCTA .singleServiceRelatedItemCTAImage {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.singleServiceRelated .slick-dots li button:before {
+    color: #C4C4C4;
+    opacity: .1;
+    border-radius: unset;
+}
+
+.singleServiceRelated .slick-dots li.slick-active button:before {
+    color: #FF3232;
+    opacity: 1;
+}
+
+.singleServiceTitle {
+    font-family: var(--font-family-sora);
+}
+
+.singleServiceSubtitle,
+.singleServiceRelatedItemParagraph {
+    font-family: var(--font-family-rosario);
+}
+
+.singleServiceTitle {
+    font-size: 3.375rem;
+    font-weight: 700;
+    line-height: 4.75rem;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0 1.25rem 3rem;
+}
+
+.singleServiceSubtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: 0.4em;
+    text-align: center;
+    color: var(--color-red);
+    text-transform: uppercase;
+    display: block;
+}
+

@@ -1,0 +1,119 @@
+.singleServiceVideo {
+    padding-bottom: 10rem;
+    position: relative;
+}
+
+.singleServiceVideoTextWrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2.125rem;
+    padding-bottom: 4.6875rem;
+}
+
+.singleServiceVideoTextWrapper:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 7.75rem;
+    height: 0.25rem;
+    display: block;
+    background-color: var(--color-red);
+}
+
+.singleServiceVideoTextWrapperInner {
+    width: 100%;
+    max-width: 600px;
+}
+
+.singleServiceVideoTitle {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.8125rem;
+}
+
+.singleServiceVideoTitlePhone {
+    color: #000;
+    background-color: #fff;
+    padding: 0.9375rem 2.125rem 0.9375rem 1.4375rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 13.875rem;
+    transition: .3s;
+}
+
+.singleServiceVideoTitlePhone:hover {
+    opacity: 0.4;
+}
+
+.singleServiceVideoParagraph {
+    font-size: 1.125rem;
+    font-weight: 300;
+    line-height: 1.9375rem;
+    color: var(--color-light-gray);
+    max-width: 565px;
+}
+
+.singleServiceVideoSRCWrapper {
+    position: relative;
+}
+
+.singleServiceVideoSRCWrapper:before,
+.singleServiceVideoSRCWrapper:after {
+    content: '';
+    width: 3.875rem;
+    height: 4.8125rem;
+    background-image: url(../../../public//dots.png);
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+}
+
+.singleServiceVideoSRCWrapper:before {
+    top: -1.3125rem;
+    right: 2.9375rem;
+}
+
+.singleServiceVideoSRCWrapper:after {
+    bottom: -2.4375rem;
+    left: 4.875rem;
+}
+
+.singleServiceTitle,
+.singleServiceVideoTitle {
+    font-family: var(--font-family-sora);
+}
+
+.singleServiceSubtitle,
+.singleServiceVideoParagraph {
+    font-family: var(--font-family-rosario);
+}
+
+.singleServiceVideoTitlePhone {
+    font-family: var(--font-family-red-rose);
+}
+
+.singleServiceTitle {
+    font-size: 3.375rem;
+    font-weight: 700;
+    line-height: 4.75rem;
+    letter-spacing: 0;
+    text-align: center;
+    padding: 0 1.25rem 3rem;
+}
+
+.singleServiceSubtitle {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 2.25rem;
+    letter-spacing: 0.4em;
+    text-align: center;
+    color: var(--color-red);
+    text-transform: uppercase;
+    display: block;
+}
+

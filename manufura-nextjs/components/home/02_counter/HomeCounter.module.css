@@ -1,0 +1,50 @@
+.homeCounter {
+    padding: 6.25em 0;
+}
+
+.homeCounterList {
+    display: flex;
+    align-items: center;
+    gap: 6.25em;
+}
+
+.homeCounterListItem {
+    position: relative;
+    background-position: 44% 68%;
+    background-repeat: no-repeat;
+    min-height: 180px;
+    display: flex;
+    align-items: flex-end;
+    gap: 36px;
+    padding-bottom: 1.5em;
+}    
+
+.homeCounterListItem:nth-child(2) {
+    background-position: 90% 68%;
+}
+
+.homeCounterListItem img {
+    position: absolute;
+    z-index: -1;
+}
+
+.homeCounterListItemNumber {
+    color: #FFF;
+    font-family: Sora;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    line-height:  76.8px;
+    min-width: 170px
+}
+
+.homeCounterListItemTitle {
+    color: #FFF;
+    font-family: "Rosario", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25.2px;
+    max-width: 280px;
+    padding-bottom: 13px;
+}
