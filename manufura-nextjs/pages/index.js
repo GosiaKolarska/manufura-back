@@ -12,24 +12,24 @@ import {
   HomeVideo,
 } from "@/components/home/";
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   try {
     const query = `*[_type == "homepage"][0]{
-      homeSlider,
-      homeCounter,
-      homeAbout,
-      homeClients,
-      homeServices,
-      homeTestimonial,
-      homeVideo
-    }`;
+    homeSlider,
+    homeCounter,
+    homeAbout,
+    homeClients,
+    homeServices,
+    homeTestimonial,
+    homeVideo
+  }`;
     const homepageData = await client.fetch(query);
 
     if (!homepageData) {
       return { notFound: true };
     }
 
-    return { props: { homepageData }, revalidate: 60 };
+    return { props: { homepageData } };
   } catch (error) {
     console.error("Error fetching homepage data:", error);
     return { props: { homepageData: null } };

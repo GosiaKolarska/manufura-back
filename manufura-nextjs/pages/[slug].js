@@ -11,16 +11,8 @@ import {
   SingleFaq,
 } from "@/components/single/";
 
-export async function getStaticPaths() {
-  const query = '*[_type == "singlePageTemplate"].slug.current';
-  const slugs = await client.fetch(query);
-  const paths = slugs.map((slug) => ({ params: { slug } }));
-
-  return { paths, fallback: "blocking" };
-}
-
-export async function getStaticProps({ params }) {
-  const { slug } = params;
+export async function getServerSideProps(context) {
+  const { slug } = context.params;
   const query = `*[_type == "singlePageTemplate" && slug.current == $slug][0]{
     ...,
     singleHero,
@@ -36,7 +28,7 @@ export async function getStaticProps({ params }) {
     return { notFound: true };
   }
 
-  return { props: { pageData }, revalidate: 60 };
+  return { props: { pageData } };
 }
 
 export default function SinglePage({ pageData }) {

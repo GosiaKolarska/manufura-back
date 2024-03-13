@@ -49,7 +49,6 @@ const SingleGallery = ({ data }) => {
               >
                 <Image
                   src={urlFor(item.image.asset)}
-                  layout="fill"
                   alt="gallery photo"
                   width="395"
                   height="517"
