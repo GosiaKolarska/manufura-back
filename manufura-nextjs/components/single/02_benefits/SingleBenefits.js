@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/legacy/image";
 import imageUrlBuilder from "@sanity/image-url";
-import client from "@/utils/sanityClient"; // Ensure this is correctly imported
+import client from "@/utils/sanityClient";
 
 import styles from "./SingleBenefits.module.css";
 
