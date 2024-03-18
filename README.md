@@ -14,7 +14,7 @@ This project is still in progress. I'm actively developing and refining features
 
 Stay tuned for updates as I continue to develop and enhance the project. I'm excited about the improvements I have in store and look forward to sharing them with you!
 
-possibly to see progress here: [https://manufura.netlify.app/](https://manufura-six.vercel.app/)]
+possibly to see progress here: [https://manufura.netlify.app/](https://manufura-six.vercel.app/)
 
 ---
 
