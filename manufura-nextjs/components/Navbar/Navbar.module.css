@@ -139,3 +139,10 @@
   color: #fff;
   transition: .3s;
 }
+
+
+@media (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+}

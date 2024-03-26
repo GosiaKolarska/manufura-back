@@ -39,3 +39,9 @@
     font-weight: 300;
     line-height: 0.9375rem;
 }
+
+@media (max-width: 1290px) {
+    .socials {
+        right: -60px;
+    }
+}

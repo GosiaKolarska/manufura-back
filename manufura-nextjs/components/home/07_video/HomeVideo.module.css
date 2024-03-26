@@ -1,3 +1,15 @@
 .homeVideo {
     padding: 100px 0;
 }
+
+@media (max-width: 1024px) {
+    .homeVideo {
+        padding: 100px 60px;
+    }
+}
+
+@media (max-width: 590px) {
+    .homeVideo {
+        padding: 60px 32px;
+    }
+}

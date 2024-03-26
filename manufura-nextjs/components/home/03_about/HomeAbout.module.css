@@ -83,3 +83,14 @@
     font-weight: 300;
     line-height: 1.7em; 
 }
+
+@media (max-width: 1290px) {}
+@media (max-width: 1024px) {
+    .homeAbout {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 590px) {}

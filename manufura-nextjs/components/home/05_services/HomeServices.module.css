@@ -83,3 +83,9 @@
     line-height: 1.0625rem;
     position: relative;
 }
+
+@media (max-width: 1290px) {
+    .HomeServices {
+        display: none;
+    }
+}

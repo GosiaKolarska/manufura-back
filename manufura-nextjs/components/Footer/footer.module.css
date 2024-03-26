@@ -105,7 +105,6 @@
 .socialItem {
     width: 34px;
     height: 34px;
-    /* background: #FFF; */
     border: 1px solid;
     border-radius: 100%;
     display: flex;
@@ -125,4 +124,68 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .footer{
+        padding: 20px 32px;
+    }
+
+    .footerTopLeft {
+        flex-direction: row;
+        gap: 40px;
+        max-width: 100%;
+        align-items: center;
+    }
+
+    .footerTopLeftContent {
+        max-width: 260px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footerTop {
+        flex-direction: column;
+        gap: 60px;
+    }
+    .footerTopRight {
+        gap: 90px;
+    }
+    .copy {
+        align-items: center;
+        padding: 22px 0 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerTopRight {
+        gap: unset;
+        justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 590px) {
+    .footer{
+        padding: 20px 32px 30px;
+    }
+
+    .footerTopRight {
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .copy {
+        flex-direction: column-reverse;
+        align-items: unset;
+        gap: 20px;
+    }
+    .copyLeft {
+        flex-direction: column-reverse;
+        gap: 16px;
+    }
+
+    .copyRight {
+        justify-content: flex-end;
+    }
 }

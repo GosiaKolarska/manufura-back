@@ -46,3 +46,33 @@
     line-height: 1.7; 
     padding-bottom: 1.563rem; 
 }
+
+@media (max-width: 1024px) {
+    .ctaSection {
+        padding: 80px 32px 96px;
+    }
+
+    .ctaSectionInner {
+        gap: 40px;
+    }
+
+
+}
+
+@media (max-width: 768px) {
+    .ctaTitle {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+    }
+    .ctaRightContent p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 590px) {
+
+    .ctaSectionInner {
+        flex-direction: column;
+    }
+    
+}

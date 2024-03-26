@@ -48,3 +48,33 @@
     max-width: 280px;
     padding-bottom: 13px;
 }
+
+@media (max-width: 1290px) {
+    .homeCounter {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .homeCounterListItem {
+        gap: 10px;
+    }
+    .homeCounterListItemNumber {
+        font-size: 54px;
+    }
+    .homeCounterList {
+        flex-direction: column;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .homeCounterList {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 590px) {
+
+}
